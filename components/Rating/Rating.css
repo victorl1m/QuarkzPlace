@@ -27,9 +27,9 @@
 }
 .star-subtext {
   font-size: 16px;
-  font-family: "Helvetica";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(0, 0, 0, 0.7);
-  font-weight: lighter;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 .downloads {
@@ -46,9 +46,9 @@
 }
 .downloads-subtext {
   font-size: 16px;
-  font-family: "Helvetica";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(0, 0, 0, 0.7);
-  font-weight: lighter;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 .suggestions {
@@ -62,7 +62,7 @@
 }
 .suggestions-subtext {
   font-size: 16px;
-  font-family: "Helvetica";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(0, 0, 0, 0.7);
   font-weight: lighter;
   margin-bottom: 5px;

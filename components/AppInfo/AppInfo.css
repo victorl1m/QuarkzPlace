@@ -12,7 +12,7 @@
   margin-bottom: 16px;
   margin-top: 18px;
   font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
+  font-weight: 700;
   justify-content: center;
 }
 .rating-child {
@@ -96,7 +96,7 @@
 }
 .compatiblity-text {
   font-size: 12px;
-  font-weight: lighter;
+  font-weight: 500;
   color: #333;
   font-family: "Helvetica", sans-serif;
 }
