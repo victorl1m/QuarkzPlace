@@ -4,7 +4,7 @@
   --hg-color: #00b2cb;
   --hg-color-hover: #00a1b9;
   --transition: 0.3s;
-  --font-serif: "Helvetica Neue", sans-serif;
+  --font-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --text-color: rgb(0, 0, 0, 0.8);
 }
 

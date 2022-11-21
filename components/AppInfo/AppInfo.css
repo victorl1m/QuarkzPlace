@@ -11,7 +11,7 @@
   flex-direction: column;
   margin-bottom: 16px;
   margin-top: 18px;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   justify-content: center;
 }
@@ -30,13 +30,13 @@
 }
 .app-rating {
   display: flex;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bolder;
   align-items: center;
 }
 .app-owner {
   font-size: 16px;
-  font-family: "Helvetica";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 24px;
   font-weight: 600;
 }
@@ -46,7 +46,7 @@
   line-height: 1.2;
 }
 .appinfo-title {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3.5rem;
   color: var(--text-color);
   /* margin-bottom: 0.5rem; */
@@ -98,7 +98,7 @@
   font-size: 12px;
   font-weight: 500;
   color: #333;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .wishlist-btn {
   color: #bbb;
@@ -115,7 +115,7 @@
 .wishlist-text {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 .another-area {
