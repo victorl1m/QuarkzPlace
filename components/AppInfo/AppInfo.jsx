@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Rating from "../Rating/Rating";
 import AppImage from "../AppImage/AppImage";
 import Contact from "../Contact/Contact";
+import NewFeatures from "../NewFeatures/NewFeatures";
 
 export default function AppInfo() {
   function downloadLatest() {
@@ -22,6 +23,15 @@ export default function AppInfo() {
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
+
+  if (!data) {
+    return (
+      <div className="div-loading">
+        <h1 className="loading-text">Carregando os dados...</h1>
+      </div>
+    );
+  }
+
   return (
     <div className="appinfo-container">
       {data?.map((info) => (
@@ -72,8 +82,11 @@ export default function AppInfo() {
             </div>
           </div>
           <div className="another-area">
-            <AppImage />
-            <Contact />
+            <div className="contact-image">
+              <AppImage />
+              <Contact />
+            </div>
+            <NewFeatures />
           </div>
         </div>
       ))}

@@ -1,7 +1,6 @@
 .appinfo-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 600px;
 }
 .appinfo-box {
   margin: 0 164px 0 164px;
@@ -118,9 +117,26 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
-.another-area {
+.contact-image {
   display: flex;
   flex-direction: row;
+}
+.another-area {
+  display: flex;
+  flex-direction: column;
+}
+.div-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.loading-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -151,6 +167,9 @@
   }
   .another-area {
     gap: 24px;
+    flex-direction: column;
+  }
+  .contact-image {
     flex-direction: column;
   }
 }

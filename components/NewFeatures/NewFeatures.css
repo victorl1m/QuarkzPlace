@@ -1,0 +1,21 @@
+.newfeature-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.newfeature-types {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.newfeature-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.newfeature-update {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
