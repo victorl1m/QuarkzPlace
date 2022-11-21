@@ -11,13 +11,14 @@ export default function AppInfo() {
       .then((response) => response.json())
       .then((data) => {
         window.open(data.assets[0].browser_download_url);
+        window.close();
       });
   }
 
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/apps")
+    fetch("https://apiPubnews.vitaoks1.repl.co")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);

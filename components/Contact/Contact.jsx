@@ -6,7 +6,7 @@ export default function Contact() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/apps")
+    fetch("https://apiPubnews.vitaoks1.repl.co")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
