@@ -1,13 +1,18 @@
 {
     "apps": [
       {
-        "appShortName": "SIGO",
+        "appShortName": "SIGO | Gestão de Obras",
         "appLongName": "Sistema Integrado de Gestão de Obra",
         "appDesc": "Sistema Integrado de Gestão de Obra",
         "appPackage": "com.sigo",
         "appOwner": "SIGO Team Ltd.",
         "appIcon": "https://i.ibb.co/F5qH3tq/ic-launcher-round.png",
         "appPrice": "Gratuito",
+        "appImage1": "https://i.ibb.co/0nZ6Z3T/1.png",
+        "appImage2": "https://i.ibb.co/0nZ6Z3T/1.png",
+        "appImage3": "https://i.ibb.co/0nZ6Z3T/1.png",
+        "appImage4": "https://i.ibb.co/0nZ6Z3T/1.png",
+        "appImage5": "https://i.ibb.co/0nZ6Z3T/1.png",
         "id": 1
       }
     ]

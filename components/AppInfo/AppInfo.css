@@ -36,7 +36,8 @@
 .app-owner {
   font-size: 16px;
   font-family: "Helvetica";
-  font-weight: 500;
+  margin-top: 24px;
+  font-weight: 600;
 }
 .appinfo-info {
   display: flex;
@@ -63,7 +64,33 @@
   cursor: pointer;
   padding: 16px;
   gap: 5px;
+  justify-content: center;
+  width: 200px;
 }
 .download-text {
   font-size: 16px;
+}
+.additional-area {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.wishlist-btn {
+  color: #bbb;
+  background-color: rgb(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: not-allowed;
+  padding: 16px;
+  gap: 5px;
+  justify-content: center;
+  width: 200px;
+}
+.wishlist-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
 }
