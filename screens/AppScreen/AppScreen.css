@@ -1,0 +1,12 @@
+.appscreen-container {
+  margin-top: 120px;
+  margin-left: 44px;
+}
+.highlight-text {
+  font-family: "Hind Guntur", sans-serif;
+  /* margin: 0 18px; */
+  background: #22c1c3;
+  background: linear-gradient(to right, #22c1c3 0%, #00b2cb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

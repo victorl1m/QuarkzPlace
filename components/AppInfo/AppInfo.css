@@ -1,0 +1,69 @@
+.appinfo-container {
+  display: flex;
+  flex-direction: column;
+}
+.appinfo-box {
+  margin: 0 164px 0 164px;
+}
+.appinfo-rating {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  margin-top: 18px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  justify-content: center;
+}
+.rating-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+}
+.rating-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 8px;
+}
+.app-rating {
+  display: flex;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  align-items: center;
+}
+.app-owner {
+  font-size: 16px;
+  font-family: "Helvetica";
+  font-weight: 500;
+}
+.appinfo-info {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.2;
+}
+.appinfo-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3.5rem;
+  color: var(--text-color);
+  /* margin-bottom: 0.5rem; */
+}
+.appinfo-right {
+  margin-left: auto;
+  margin-right: 64px;
+}
+.download-btn {
+  background-color: var(--hg-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 16px;
+  gap: 5px;
+}
+.download-text {
+  font-size: 16px;
+}
