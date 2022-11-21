@@ -9,6 +9,11 @@
   position: fixed;
   top: 0;
   gap: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .logo-container {
   display: flex;
@@ -28,6 +33,7 @@
   text-underline-offset: 32px;
   text-decoration: underline;
   text-decoration-color: var(--hg-color);
+  cursor: pointer;
 }
 .nav-text {
   font-family: var(--font-serif);
@@ -38,6 +44,7 @@
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 0.3s;
+  cursor: pointer;
 }
 .nav-items {
   display: flex;
@@ -61,4 +68,10 @@
   background: linear-gradient(to right, #22c1c3 0%, #00b2cb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
 }

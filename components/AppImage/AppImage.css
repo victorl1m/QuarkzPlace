@@ -1,0 +1,14 @@
+.appimage-container {
+  display: flex;
+  margin-top: 12px;
+  border-radius: 25px;
+  width: 950px;
+}
+.appimage-box {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+}
+.app-image {
+  border-radius: 10px;
+}

@@ -1,16 +1,51 @@
 import "./AppImage.css";
 import "../../src/global.css";
+import { useState, useEffect } from "react";
 
 export default function AppImage() {
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    fetch("http://localhost:5000/apps")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
   return (
-    <div className="appinfo-right">
-      <img
-        src="./test.png"
-        width={256}
-        height={256}
-        alt="appImage"
-        className="appinfo-image"
-      />
+    <div className="appimage-container">
+      {data?.map((info) => (
+        <div className="appimage-box">
+          <img
+            src={info.appImage1}
+            height={300}
+            alt="appImage"
+            className="app-image"
+          />
+          <img
+            src={info.appImage2}
+            height={300}
+            alt="appImage"
+            className="app-image"
+          />
+          <img
+            src={info.appImage3}
+            height={300}
+            alt="appImage"
+            className="app-image"
+          />
+          <img
+            src={info.appImage4}
+            height={300}
+            alt="appImage"
+            className="app-image"
+          />
+          <img
+            src={info.appImage5}
+            height={300}
+            alt="appImage"
+            className="app-image"
+          />
+        </div>
+      ))}
     </div>
   );
 }

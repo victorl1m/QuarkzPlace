@@ -1,72 +1,100 @@
 .rating {
-    display: flex;
-    flex-direction: row
+  display: flex;
+  flex-direction: row;
 }
-.rating-stars{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin-right: auto;
-    padding: 12px;
-    /* background-color: red; */
-    
-    margin-bottom: 12px;
-    margin-top: 12px;
+.rating-stars {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-right: auto;
+  padding: 12px;
+  /* background-color: red; */
+
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 .stars {
-    width: 150px;
-    line-height: 1;
-    border-right: 1px solid rgb(0, 0, 0, 0.1);
+  width: 150px;
+  line-height: 1;
+  border-right: 1px solid rgb(0, 0, 0, 0.1);
 }
 .star-text {
-    font-size: 16px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #000000;
-    font-weight: 600;
-    margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 .star-subtext {
-    font-size: 16px;
-    font-family: 'Helvetica';
-    color: rgb(0, 0, 0, 0.7);
-    font-weight: lighter;
-    margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: lighter;
+  margin-bottom: 5px;
 }
 .downloads {
-    width: 150px;
-    line-height: 1;
-    border-right: 1px solid rgb(0, 0, 0, 0.1);
+  width: 150px;
+  line-height: 1;
+  border-right: 1px solid rgb(0, 0, 0, 0.1);
 }
 .downloads-text {
-    font-size: 16px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #000000;
-    font-weight: 600;
-    margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 .downloads-subtext {
-    font-size: 16px;
-    font-family: 'Helvetica';
-    color: rgb(0, 0, 0, 0.7);
-    font-weight: lighter;
-    margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: lighter;
+  margin-bottom: 5px;
 }
 .suggestions {
-    width: 150px;
-    line-height: 1.05;
-    border-right: 1px solid rgb(0, 0, 0, 0.1);
+  width: 150px;
+  line-height: 1.05;
+  border-right: 1px solid rgb(0, 0, 0, 0.1);
 }
-.suggestions-text {
-    font-size: 16px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #000000;
-    font-weight: 600;
-    margin-bottom: 5px;
+.suggestion-icon {
+  width: 16px;
+  height: 16px;
 }
 .suggestions-subtext {
-    font-size: 16px;
-    font-family: 'Helvetica';
-    color: rgb(0, 0, 0, 0.7);
-    font-weight: lighter;
-    margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .stars {
+    width: 75px;
+  }
+  .downloads {
+    width: 75px;
+  }
+  .suggestions {
+    width: 75px;
+  }
+  .star-text {
+    font-size: 12px;
+  }
+  .star-subtext {
+    font-size: 12px;
+  }
+  .downloads-text {
+    font-size: 12px;
+  }
+  .downloads-subtext {
+    font-size: 12px;
+  }
+  .suggestions-subtext {
+    font-size: 12px;
+  }
+  .suggestion-icon {
+    width: 12px;
+    height: 12px;
+  }
 }

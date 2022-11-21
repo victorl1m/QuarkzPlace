@@ -1,8 +1,6 @@
 import "./Topbar.css";
 import "../../src/global.css";
 
-const userImage = "https://i.imgur.com/7wQ61EW.jpeg";
-
 export default function Topbar() {
   return (
     <div className="topbar-container">
@@ -22,14 +20,10 @@ export default function Topbar() {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <a href="#">
-            <h1 className="nav-text">Developers</h1>
-          </a>
+          <h1 className="nav-text">Developers</h1>
         </li>
         <li className="nav-item">
-          <a href="#">
-            <h1 className="nav-text-selected">Apps</h1>
-          </a>
+          <h1 className="nav-text-selected">Apps</h1>
         </li>
       </ul>
     </div>

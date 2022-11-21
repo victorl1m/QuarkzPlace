@@ -1,0 +1,31 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.contact-types {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.contact-text {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact-subtext {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
