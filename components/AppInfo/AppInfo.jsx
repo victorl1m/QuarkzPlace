@@ -16,6 +16,10 @@ export default function AppInfo() {
       });
   }
 
+  setTimeout(function () {
+    location.reload();
+  }, 30000);
+
   const [data, setData] = useState();
 
   useEffect(() => {
