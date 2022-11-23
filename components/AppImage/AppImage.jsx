@@ -26,12 +26,6 @@ export default function AppImage() {
             alt="appImage"
             className="app-image"
           />
-          <img
-            src={info.appImage3}
-            height={300}
-            alt="appImage"
-            className="app-image"
-          />
         </div>
       ))}
     </div>

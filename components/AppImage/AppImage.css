@@ -12,3 +12,20 @@
 .app-image {
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .appimage-container {
+    display: flex;
+    margin-top: 12px;
+    border-radius: 25px;
+    width: 100%;
+  }
+  .appimage-box {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+  }
+  .app-image {
+    border-radius: 10px;
+  }
+}
