@@ -23,7 +23,7 @@ export default function AppInfo() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch("https://apiPubnews.vitaoks1.repl.co")
+    fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
