@@ -14,6 +14,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-radius: 0 0 25px 25px;
 }
 .logo-container {
   display: flex;
@@ -73,5 +74,11 @@
 @media (max-width: 768px) {
   .nav-items {
     display: none;
+  }
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }

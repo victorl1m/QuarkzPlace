@@ -5,6 +5,7 @@ import Rating from "../Rating/Rating";
 import AppImage from "../AppImage/AppImage";
 import Contact from "../Contact/Contact";
 import NewFeatures from "../NewFeatures/NewFeatures";
+import DataSecurity from "../DataSecurity/DataSecurity";
 
 export default function AppInfo() {
   function downloadLatest() {
@@ -63,8 +64,9 @@ export default function AppInfo() {
               <h1 className="compatiblity-text">{info.compatibility}</h1>
             </div>
             <AppImage />
-            <Contact />
+            {/* <Contact /> */}
             <NewFeatures />
+            <DataSecurity />
           </div>
         </div>
       ))}
