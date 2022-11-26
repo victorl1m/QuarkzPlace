@@ -6,7 +6,7 @@ export default function NewFeatures() {
   return (
     <div className="newfeature-container">
       <div>
-        <h1 className="newfeature-title">What's new?</h1>
+        <h1 className="newfeature-title">WHAT'S NEW?</h1>
         <ul className="newfeature-box">
           <h1 className="newfeature-update">
             - too much fixes and new improvements!

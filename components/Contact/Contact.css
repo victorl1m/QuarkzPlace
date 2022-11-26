@@ -3,6 +3,12 @@
   flex-direction: column;
   padding-top: 12px;
   padding-bottom: 12px;
+  width: 270px;
+  border-radius: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 12px;
+  background-color: rgb(0, 0, 0, 0.05);
 }
 .contact-types {
   display: flex;
@@ -11,17 +17,16 @@
 }
 .contact-title {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
   margin-bottom: 12px;
+  color: #333;
 }
 .contact-text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-serif);
   font-size: 14px;
-  font-weight: bold;
 }
 .contact-subtext {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-regular);
   font-size: 14px;
   font-weight: 500;
 }
