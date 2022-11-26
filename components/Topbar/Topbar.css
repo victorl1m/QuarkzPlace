@@ -20,7 +20,10 @@
   display: flex;
   align-items: center;
   margin: 0 18px;
-  gap: 2px;
+}
+.logo {
+  align-items: center;
+  display: flex;
 }
 .nav-item {
   margin: 0 10px;
@@ -69,6 +72,19 @@
   background: linear-gradient(to right, #22c1c3 0%, #00b2cb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.beta-container {
+  background-color: rgb(0, 178, 203, 0.05);
+  padding: 6px;
+  border-radius: 10px;
+  margin-left: 6px;
+}
+.beta-text {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: #00b2cb;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
