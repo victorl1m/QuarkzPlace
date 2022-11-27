@@ -14,9 +14,12 @@ export default function NewFeatures() {
     .replace(/(\r\n|\n|\r)/gm, "\n")
     .replaceAll("**", "");
 
+  const releaseVersion = data?.tag_name;
+
   return (
     <div className="newfeature-container">
       <div>
+        <h1 className="newfeature-version">{releaseVersion}</h1>
         <h1 className="newfeature-title">O QUE HÁ DE NOVO?</h1>
         <ul className="newfeature-box">
           <p className="newfeature-update">{latestInfo}</p>

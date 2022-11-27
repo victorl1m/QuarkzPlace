@@ -23,6 +23,11 @@ export default function AppInfo() {
     window.location.reload();
   }
 
+  // if (data?.compatibility === "android") {
+  //   compatibilityStatus =
+  //     "O aplicativo atualmente está disponível somente para dispositivos Android";
+  // }
+
   useEffect(() => {
     fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
       .then((response) => response.json())
