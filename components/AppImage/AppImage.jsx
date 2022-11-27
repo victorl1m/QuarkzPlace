@@ -1,21 +1,11 @@
 import "./AppImage.css";
 import "../../src/global.css";
 import { useState, useEffect } from "react";
-import Slider from "react-slick";
-
 export default function AppImage() {
   const [data, setData] = useState();
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   useEffect(() => {
-    fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
+    fetch(import.meta.env.VITE_API_URL)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);

@@ -11,7 +11,7 @@ export default function AppInfo() {
   const [data, setData] = useState();
 
   function downloadLatest() {
-    fetch("https://api.github.com/repos/victorl1m/SIGO/releases/latest")
+    fetch(import.meta.env.VITE_API_URL)
       .then((response) => response.json())
       .then((data) => {
         window.open(data.assets[0].browser_download_url);

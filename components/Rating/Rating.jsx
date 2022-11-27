@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export default function Rating() {
   const [data, setData] = useState();
   useEffect(() => {
-    fetch("https://api.github.com/repos/victorl1m/SIGO/releases/latest")
+    fetch(import.meta.env.VITE_GITHUB_API)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
