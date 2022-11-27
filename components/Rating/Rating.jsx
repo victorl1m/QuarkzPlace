@@ -1,8 +1,17 @@
 import "./Rating.css";
 import "../../src/global.css";
+import { useState, useEffect } from "react";
 
 export default function Rating() {
-  const rating = 4.5;
+  const [data, setData] = useState();
+  useEffect(() => {
+    fetch("https://api.github.com/repos/victorl1m/SIGO/releases/latest")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
+  const downloadCount = data?.assets[0].download_count;
+
   return (
     <div className="rating">
       <div className="rating-stars">
@@ -11,7 +20,7 @@ export default function Rating() {
           <h1 className="star-subtext">0 Avaliações</h1>
         </div>
         <div className="downloads">
-          <h1 className="downloads-text">0+</h1>
+          <h1 className="downloads-text">{downloadCount}+</h1>
           <h1 className="downloads-subtext">Downloads</h1>
         </div>
         <div className="suggestions">
