@@ -25,7 +25,7 @@ export default function Topbar() {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <h1 className="nav-text-selected">Apps</h1>
+          <h1 className="nav-text-selected">Aplicativos</h1>
         </li>
       </ul>
     </div>

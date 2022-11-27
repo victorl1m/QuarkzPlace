@@ -7,7 +7,7 @@
   flex-direction: row;
   text-align: center;
   margin-right: auto;
-  margin-top: 36px;
+  padding: 12px;
 }
 .stars {
   width: 150px;
