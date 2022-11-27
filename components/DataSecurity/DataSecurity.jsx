@@ -5,12 +5,13 @@ export default function DataSecurity() {
   return (
     <div className="data-security-container">
       <div className="data-security-box">
-        <h1 className="data-security-title">Data Security</h1>
+        <h1 className="data-security-title">Segurança de Dados</h1>
         <p className="data-security-subText">
-          Your security starts with understanding how developers collect and
-          monitor your data. Data security and privacy practices may vary by
-          use, region and age. The developer has provided the following
-          information, which may be updated from time to time.
+          Sua segurança começa com a compreensão de como os desenvolvedores
+          coletam e monitoram seus dados. As práticas de segurança e privacidade
+          de dados podem variar de acordo com uso, região e modalidade. Com
+          isso, o desenvolvedor forneceu as seguintes informações, que podem ser
+          atualizadas de tempos em tempos.
         </p>
       </div>
       <div className="security-rules">
