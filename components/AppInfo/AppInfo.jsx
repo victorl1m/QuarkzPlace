@@ -8,6 +8,8 @@ import NewFeatures from "../NewFeatures/NewFeatures";
 import DataSecurity from "../DataSecurity/DataSecurity";
 
 export default function AppInfo() {
+  const [data, setData] = useState();
+
   function downloadLatest() {
     fetch("https://api.github.com/repos/victorl1m/SIGO/releases/latest")
       .then((response) => response.json())
@@ -17,7 +19,9 @@ export default function AppInfo() {
       });
   }
 
-  const [data, setData] = useState();
+  function reload() {
+    window.location.reload();
+  }
 
   useEffect(() => {
     fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
@@ -28,7 +32,21 @@ export default function AppInfo() {
   if (!data) {
     return (
       <div className="div-loading">
-        <h1 className="loading-text">Carregando os dados...</h1>
+        <button className="loading-button" onClick={reload}>
+          <svg
+            width={24}
+            height={24}
+            fill="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="m3.508 6.726c1.765-2.836 4.911-4.726 8.495-4.726 5.518 0 9.997 4.48 9.997 9.997 0 5.519-4.479 9.999-9.997 9.999-5.245 0-9.553-4.048-9.966-9.188-.024-.302.189-.811.749-.811.391 0 .715.3.747.69.351 4.369 4.012 7.809 8.47 7.809 4.69 0 8.497-3.808 8.497-8.499 0-4.689-3.807-8.497-8.497-8.497-3.037 0-5.704 1.597-7.206 3.995l1.991.005c.414 0 .75.336.75.75s-.336.75-.75.75h-4.033c-.414 0-.75-.336-.75-.75v-4.049c0-.414.336-.75.75-.75s.75.335.75.75z" />
+          </svg>
+        </button>
+        <div className="loading-text">
+          <h1 className="loading-text">Conectando-se</h1>
+          <h1 className="loading-subText">Estou capturando seus dados! 🏓</h1>
+        </div>
       </div>
     );
   }
