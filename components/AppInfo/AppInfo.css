@@ -5,7 +5,7 @@
 .appInfo-container {
   display: flex;
   flex-direction: column;
-  margin: 0 164px 0 164px;
+  margin: 0 128px 0 128px;
   width: 900px;
 }
 .appInfo-left {
@@ -102,8 +102,20 @@
   gap: 12px;
   align-items: center;
 }
-
+@media (max-width: 1200px) {
+  .appInfo-container {
+    margin: 0 100px 0 100px;
+  }
+  .appinfo-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
+  .appinfo-box {
+    display: flex;
+    flex-direction: column;
+  }
   .appInfo-container {
     margin: 0;
     width: 100%;
@@ -115,9 +127,6 @@
   }
   .appName {
     font-size: 1.5rem;
-  }
-  .additional-area {
-    display: none;
   }
 }
 @media (max-width: 690px) {
