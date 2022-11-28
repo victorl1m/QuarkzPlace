@@ -109,6 +109,9 @@
 }
 
 @media (max-width: 768px) {
+  .appIconMobile {
+    display: none;
+  }
   .appInfo-left {
     justify-content: space-between;
   }

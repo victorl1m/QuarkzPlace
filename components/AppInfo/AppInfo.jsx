@@ -74,11 +74,11 @@ export default function AppInfo() {
                   <h1 className="DownloadBtn-text">Download</h1>
                 </button>
               </div>
-              {/* <img
+              <img
                 src={info.appIcon}
                 alt="appImage"
                 className="appIconMobile"
-              /> */}
+              />
             </div>
             <div className="appData-area">
               <AppImage />
