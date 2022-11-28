@@ -12,7 +12,7 @@
 .carousel {
   overflow: hidden;
   width: 100%;
-  cursor: none;
+  cursor: default;
   max-width: 800px;
 }
 
