@@ -31,7 +31,7 @@ export default function AppImage() {
     >
       {data?.map((info) => (
         <motion.div
-          key={info}
+          key={info.id}
           className="appimage-box"
           drag="x"
           dragConstraints={{ right: 0, left: -widthCarousel }}
