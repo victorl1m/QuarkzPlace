@@ -7,12 +7,12 @@
   background: #22c1c3;
   background: linear-gradient(to right, #22c1c3 0%, #00b2cb 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
   .appscreen-container {
     margin-top: 90px;
-    width: 100%;
   }
 }

@@ -34,7 +34,6 @@
 .appIconMobile {
   width: 256px;
   height: 256px;
-  display: none;
 }
 .appData-area {
   display: flex;
@@ -108,20 +107,23 @@
   .appInfo-container {
     margin: 0;
     width: 100%;
-    padding: 12px;
+    padding: 6px;
   }
   .appInfo-left {
     width: 100%;
+    margin: 0;
   }
   .appName {
     font-size: 1.5rem;
   }
+  .additional-area {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
   .appIconMobile {
     display: block;
     width: 128px;
     height: 128px;
-  }
-  .additional-area {
-    display: none;
   }
 }
