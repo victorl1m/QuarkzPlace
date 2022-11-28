@@ -15,7 +15,7 @@ export default function Contact() {
       {data?.map((info) => (
         <div className="contact-box">
           <h1 className="contact-title">
-            <a className="highlight-text bold">☎ Contato</a> do desenvolvedor
+            <a className="highlight-text bold">✆ Contato</a> do desenvolvedor
           </h1>
           <ul className="contact-types">
             <li key="site" className="contact-type">
