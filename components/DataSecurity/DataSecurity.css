@@ -34,7 +34,7 @@
   border-radius: 10px;
 }
 .security-rule-title {
-  font-family: var(--font-serif)
+  font-family: var(--font-serif);
   font-size: 24px;
   color: "black";
 }
