@@ -1,9 +1,71 @@
+a {
+    text-decoration: none;
+}
 .additional-container {
     display: flex;
     flex-direction: column;
 }
 .additional-box {
+    display: flex;
+    flex-direction: column;
     width: 400px;
+    padding: 12px;
+    gap: 6px;
+}
+.additional-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.additional-item {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px;
+    background-color: rgb(0, 0, 0, 0.02);
+    border-radius: 25px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.additional-item:hover {
+    background-color: rgb(0, 0, 0, 0.04);
+}
+.additional-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+.additional-appIcon {
+    width: 64px;
+    height: 64px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.additional-appName {
+    font-family: var(--font-regular);
+    font-weight: 500;
+}
+.additional-appText {
+    font-family: var(--font-regular);
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+.additional-appRating {
+    font-family: var(--font-regular);
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+.bold {
+    font-family: var(--font-serif);
+}
+.additional-text {
+    font-size: 1.2rem;
+    font-family: var(--font-regular);
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {

@@ -6,7 +6,7 @@ export default function Contact() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
+    fetch(import.meta.env.VITE_API_URL)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);

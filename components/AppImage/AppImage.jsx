@@ -1,32 +1,42 @@
 import "./AppImage.css";
 import "../../src/global.css";
 import { useState, useEffect, useRef } from "react";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 export default function AppImage() {
   const [data, setData] = useState();
-  const [widthCarousel, setWidthCarousel] = useState()
+  const [widthCarousel, setWidthCarousel] = useState();
 
   useEffect(() => {
-    fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
+    fetch(import.meta.env.VITE_API_URL)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
 
-  const carousel = useRef()
+  const carousel = useRef();
 
   useEffect(() => {
     setTimeout(() => {
       console.log("TIMEOUT");
-      setWidthCarousel(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
-    }, 700)
-  }, [])
+      setWidthCarousel(
+        carousel.current?.scrollWidth - carousel.current?.offsetWidth
+      );
+    }, 700);
+  }, []);
 
   return (
-    <motion.div ref={carousel} className="carousel" whileTap={{cursor: "grabbing"}}>
-
+    <motion.div
+      ref={carousel}
+      className="carousel"
+      whileTap={{ cursor: "grabbing" }}
+    >
       {data?.map((info) => (
-        <motion.div key={info} className="appimage-box" drag="x" dragConstraints={{right: 0, left: -widthCarousel}}>
+        <motion.div
+          key={info}
+          className="appimage-box"
+          drag="x"
+          dragConstraints={{ right: 0, left: -widthCarousel }}
+        >
           <div>
             <img
               src={info.appImage1}
