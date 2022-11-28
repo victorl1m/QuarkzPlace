@@ -83,7 +83,9 @@ export default function AppInfo() {
               <DataSecurity />
             </div>
           </div>
-          <AdditionalArea />
+          <div className="additional-area">
+            <AdditionalArea />
+          </div>
         </div>
       ))}
     </div>

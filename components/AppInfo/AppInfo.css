@@ -116,4 +116,7 @@
     width: 128px;
     height: 128px;
   }
+  .additional-area {
+    display: none;
+  }
 }

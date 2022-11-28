@@ -11,13 +11,16 @@
 
 .carousel {
   overflow: hidden;
-  cursor: grab;
   width: 100%;
+  cursor: none;
   max-width: 800px;
 }
 
 @media (max-width: 768px) {
   .app-image {
     border-radius: 10px;
+  }
+  .carousel {
+    cursor: grab;
   }
 }
