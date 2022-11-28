@@ -11,7 +11,7 @@ export default function AppInfo() {
   const [data, setData] = useState();
 
   function downloadLatest() {
-    fetch(import.meta.env.VITE_API_URL)
+    fetch(import.meta.env.VITE_GITHUB_API)
       .then((response) => response.json())
       .then((data) => {
         window.open(data.assets[0].browser_download_url);
@@ -29,7 +29,7 @@ export default function AppInfo() {
   // }
 
   useEffect(() => {
-    fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
+    fetch(import.meta.env.VITE_API_URL)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
