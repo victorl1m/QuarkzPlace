@@ -1,18 +1,29 @@
 import "./AppImage.css";
 import "../../src/global.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import {motion} from 'framer-motion'
+
 export default function AppImage() {
   const [data, setData] = useState();
+  const [widthCarousel, setWidthCarousel] = useState()
 
   useEffect(() => {
-    fetch(import.meta.env.VITE_API_URL)
+    fetch("https://APIQuarkzPlace.vitaoks1.repl.co")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
+
+  const carousel = useRef()
+
+  useEffect(() => {
+    setWidthCarousel(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+  }, [])
+
   return (
-    <div className="appimage-container">
+    <motion.div ref={carousel} className="carousel" whileTap={{cursor: "grabbing"}}>
+
       {data?.map((info) => (
-        <div className="appimage-box">
+        <motion.div key={info} className="appimage-box" drag="x" dragConstraints={{right: 0, left: -widthCarousel}}>
           <div>
             <img
               src={info.appImage1}
@@ -53,8 +64,8 @@ export default function AppImage() {
               className="app-image img5"
             />
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
