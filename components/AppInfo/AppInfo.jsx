@@ -67,8 +67,19 @@ export default function AppInfo() {
           <div className="appInfo-container">
             <div className="appInfo-left">
               <div className="appInfo-left-child">
-                <h1 className="appName">{info.appShortName}</h1>
-                <h1 className="highlight-text appPublisher">{info.appOwner}</h1>
+                <div className="appName-area">
+                  <img
+                    src={info.appIcon}
+                    alt="appImage"
+                    className="appIcon"
+                  ></img>
+                  <div className="appName-div">
+                    <h1 className="appName">{info.appShortName}</h1>
+                    <h1 className="highlight-text appPublisher">
+                      {info.appOwner}
+                    </h1>
+                  </div>
+                </div>
                 <Rating />
                 <button onClick={downloadLatest} className="DownloadBtn">
                   <h1 className="DownloadBtn-text">Download</h1>
