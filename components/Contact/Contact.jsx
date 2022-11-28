@@ -18,7 +18,7 @@ export default function Contact() {
             <a className="highlight-text bold">☎ Contato</a> do desenvolvedor
           </h1>
           <ul className="contact-types">
-            <li className="contact-type">
+            <li key="site" className="contact-type">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -31,8 +31,19 @@ export default function Contact() {
                 <h1 className="contact-text">Site</h1>
                 <h1 className="contact-subtext">{info.site}</h1>
               </div>
+              <button className="contact-arrow">
+                <svg
+                  width={24}
+                  height={24}
+                  fill="#00b2cb"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" />
+                </svg>
+              </button>
             </li>
-            <li className="contact-type">
+            <li key="email" className="contact-type">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

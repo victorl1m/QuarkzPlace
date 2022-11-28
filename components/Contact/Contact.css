@@ -1,3 +1,4 @@
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -9,10 +10,20 @@
   padding: 12px;
   align-items: center;
 }
+.contact-arrow {
+  margin-left: auto;
+  cursor: pointer;
+}
 .contact-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 .contact-type {
   display: flex;
@@ -21,7 +32,7 @@
   border-radius: 10px;
   flex-direction: row;
   align-items: center;
-  gap: 6px;
+  gap: 12px;
   transition: var(--transition);
 }
 .contact-type:hover {
@@ -44,11 +55,13 @@
 .contact-text {
   font-family: var(--font-serif);
   font-size: 14px;
+  line-height: 1.2;
 }
 .contact-subtext {
   font-family: var(--font-regular);
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.2;
 }
 .contact-icon {
   display: flex;

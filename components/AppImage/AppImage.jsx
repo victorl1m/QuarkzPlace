@@ -17,7 +17,6 @@ export default function AppImage() {
 
   useEffect(() => {
     setTimeout(() => {
-      console.log("TIMEOUT");
       setWidthCarousel(
         carousel.current?.scrollWidth - carousel.current?.offsetWidth
       );
