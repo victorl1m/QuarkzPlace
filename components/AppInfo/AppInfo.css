@@ -97,7 +97,12 @@
   font-family: var(--font-regular);
   font-weight: 500;
 }
-
+.additional-area {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
 
 @media (max-width: 768px) {
   .appInfo-container {

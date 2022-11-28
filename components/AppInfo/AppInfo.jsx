@@ -85,6 +85,7 @@ export default function AppInfo() {
           </div>
           <div className="additional-area">
             <AdditionalArea />
+            <Contact />
           </div>
         </div>
       ))}
