@@ -48,12 +48,15 @@
 }
 .suggestions {
   width: 150px;
-  line-height: 1.10;
+  line-height: 1;
   border-right: 1px solid rgb(0, 0, 0, 0.1);
 }
-.suggestions-icon {
-  width: 16px;
-  height: 16px;
+.suggestions-text {
+  font-size: 16px;
+  font-family: var(--font-serif);
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 .suggestions-subtext {
   font-size: 16px;
@@ -84,11 +87,10 @@
   .downloads-subtext {
     font-size: 12px;
   }
-  .suggestions-subtext {
+  .suggestions-text {
     font-size: 12px;
   }
-  .suggestions-icon {
-    width: 12px;
-    height: 12px;
+  .suggestions-subtext {
+    font-size: 12px;
   }
 }
