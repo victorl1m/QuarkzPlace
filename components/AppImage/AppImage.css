@@ -4,14 +4,16 @@
   flex-direction: row;
   margin: 2rem 0;
 }
+
 .app-image {
   border-radius: 10px;
 }
 
-.carosel {
-  cursor: grab;
+.carousel {
   overflow: hidden;
-  max-width: 600px; 
+  cursor: grab;
+  width: 100%;
+  max-width: 800px;
 }
 
 @media (max-width: 768px) {
