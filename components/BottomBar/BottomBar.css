@@ -1,14 +1,12 @@
 .bottomBar-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
-    width: 100%;
-    gap: 64px;
+    width: 900px;
     margin-top: 100px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     margin-left: 164px;
-    width: 1000px;
 }
 .bottomBar-title {
     font-family: var(--font-serif);
@@ -26,9 +24,42 @@
     font-size: 12px;
     cursor: pointer;
     transition: 0.3s;
-    border: 1px solid transparent
+    border: 1px solid transparent;
 }
 .bottomBar-child:hover {
     border-bottom: 1px solid #333;
     transition: 0.3s;
+}
+.bottomBar-row-box {
+    display: flex;
+    flex-direction: row;
+    gap: 124px;
+    margin-bottom: 24px;
+}
+.bottomBar-column-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.bottomBar-lang {
+    font-family: var(--font-regular);
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .bottomBar-container {
+        margin-left: 0;
+        width: 100%;
+        padding: 12px;
+        align-items: center;
+        text-align: center;
+    }
+    .bottomBar-row-box {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
 }
