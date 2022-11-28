@@ -6,6 +6,7 @@ import AppImage from "../AppImage/AppImage";
 import Contact from "../Contact/Contact";
 import NewFeatures from "../NewFeatures/NewFeatures";
 import DataSecurity from "../DataSecurity/DataSecurity";
+import AdditionalArea from "../AdditionalArea/AdditionalArea";
 
 export default function AppInfo() {
   const [data, setData] = useState();
@@ -59,23 +60,30 @@ export default function AppInfo() {
   return (
     <div className="container">
       {data?.map((info) => (
-        <div className="appInfo-container">
-          <div className="appInfo-left">
-            <div className="appInfo-left-child">
-              <h1 className="appName">{info.appShortName}</h1>
-              <h1 className="highlight-text appPublisher">{info.appOwner}</h1>
-              <Rating />
-              <button onClick={downloadLatest} className="DownloadBtn">
-                <h1 className="DownloadBtn-text">Download</h1>
-              </button>
+        <div className="appinfo-box">
+          <div className="appInfo-container">
+            <div className="appInfo-left">
+              <div className="appInfo-left-child">
+                <h1 className="appName">{info.appShortName}</h1>
+                <h1 className="highlight-text appPublisher">{info.appOwner}</h1>
+                <Rating />
+                <button onClick={downloadLatest} className="DownloadBtn">
+                  <h1 className="DownloadBtn-text">Download</h1>
+                </button>
+              </div>
+              <img
+                src={info.appIcon}
+                alt="appImage"
+                className="appIconMobile"
+              />
             </div>
-            <img src={info.appIcon} alt="appImage" className="appIconMobile" />
+            <div className="appData-area">
+              <AppImage />
+              <NewFeatures />
+              <DataSecurity />
+            </div>
           </div>
-          <div className="appData-area">
-            <AppImage />
-            <NewFeatures />
-            <DataSecurity />
-          </div>
+          <AdditionalArea />
         </div>
       ))}
     </div>

@@ -1,3 +1,7 @@
+.appinfo-box {
+  display: flex;
+  flex-direction: row;
+}
 .appInfo-container {
   display: flex;
   flex-direction: column;
@@ -7,6 +11,7 @@
 .appInfo-left {
   display: flex;
   flex-direction: row;
+  width: 900px;
   justify-content: space-between;
 }
 .appInfo-left-child {
@@ -99,6 +104,9 @@
     margin: 0;
     width: 100%;
     padding: 12px;
+  }
+  .appInfo-left {
+    width: 100%;
   }
   .appName {
     font-size: 1.5rem;
