@@ -1,11 +1,11 @@
 .appinfo-box {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .appInfo-container {
   display: flex;
   flex-direction: column;
-  margin: 0 128px 0 128px;
   width: 900px;
 }
 .appInfo-left {
@@ -102,15 +102,10 @@
   gap: 12px;
   align-items: center;
 }
-@media (max-width: 1200px) {
-  .appInfo-container {
-    margin: 0 100px 0 100px;
-  }
-  .appinfo-box {
-    display: flex;
-    flex-direction: column;
-  }
+.additional-area-elements {
+  margin-left: 56px;
 }
+
 @media (max-width: 768px) {
   .appinfo-box {
     display: flex;
@@ -127,6 +122,13 @@
   }
   .appName {
     font-size: 1.5rem;
+  }
+  .additional-area-elements {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
   }
 }
 @media (max-width: 690px) {

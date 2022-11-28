@@ -51,7 +51,9 @@ export default function AppInfo() {
         </button>
         <div className="loading-text">
           <h1 className="loading-text">Conectando-se</h1>
-          <h1 className="loading-subText">Estou capturando seus dados! 🏓</h1>
+          <h1 className="loading-subText">
+            Estou carregando todos os dados! 🏓
+          </h1>
         </div>
       </div>
     );
@@ -83,7 +85,7 @@ export default function AppInfo() {
               <DataSecurity />
             </div>
           </div>
-          <div className="additional-area">
+          <div className="additional-area-elements">
             <AdditionalArea />
             <Contact />
           </div>
