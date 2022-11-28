@@ -22,6 +22,7 @@
   list-style-type: none;
   scrollbar-width: auto;
   scrollbar-color: var(--hg-color) #ffffff;
+  -webkit-user-drag: none;
 }
 *::-webkit-scrollbar {
   width: 16px;
