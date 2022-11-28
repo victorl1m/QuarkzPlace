@@ -41,6 +41,7 @@
 .contact-types {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 12px;
 }
 .contact-title {
