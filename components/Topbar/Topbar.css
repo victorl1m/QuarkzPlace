@@ -13,6 +13,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 100%;
   border-radius: 0 0 25px 25px;
 }
 .logo-container {
