@@ -13,6 +13,7 @@
   width: 150px;
   line-height: 1;
   border-right: 1px solid rgb(0, 0, 0, 0.1);
+  border-left: 1px solid rgb(0, 0, 0, 0.1);
 }
 .star-text {
   font-size: 16px;
@@ -47,7 +48,7 @@
 }
 .suggestions {
   width: 150px;
-  line-height: 1.05;
+  line-height: 1.10;
   border-right: 1px solid rgb(0, 0, 0, 0.1);
 }
 .suggestions-icon {
@@ -69,7 +70,7 @@
     width: 75px;
   }
   .suggestions {
-    width: 80px;
+    width: 75px;
   }
   .star-text {
     font-size: 12px;
