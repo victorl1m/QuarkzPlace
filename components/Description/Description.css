@@ -1,0 +1,20 @@
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.02);
+    border-radius: 25px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #e0e0e0;
+}
+.description-title {
+    font-family: var(--font-serif);
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.8);
+}
+.description-text {
+    font-family: var(--font-serif);
+    font-size: 12px;
+    text-align: justify;
+    justify-content: auto;
+}

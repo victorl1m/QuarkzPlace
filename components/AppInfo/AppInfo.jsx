@@ -7,6 +7,7 @@ import Contact from "../Contact/Contact";
 import NewFeatures from "../NewFeatures/NewFeatures";
 import DataSecurity from "../DataSecurity/DataSecurity";
 import AdditionalArea from "../AdditionalArea/AdditionalArea";
+import Description from "../Description/Description";
 
 export default function AppInfo() {
   const [data, setData] = useState();
@@ -81,6 +82,7 @@ export default function AppInfo() {
             </div>
             <div className="appData-area">
               <AppImage />
+              <Description />
               <NewFeatures />
               <DataSecurity />
             </div>

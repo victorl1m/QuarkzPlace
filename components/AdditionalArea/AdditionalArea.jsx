@@ -17,7 +17,7 @@ export default function AdditionalArea() {
             alt="app-icon"
           ></img>
           <div className="additional-app">
-            <a className="additional-appName">GECOM</a>
+            <a className="additional-appName">GECOM - Gestão de Telecom.</a>
             <h1 className="additional-appText">QuarkzPlace Ltd.</h1>
             <h1 className="additional-appRating">0.0 ★</h1>
           </div>
