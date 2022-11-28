@@ -82,9 +82,9 @@ export default function AppInfo() {
             </div>
             <div className="appData-area">
               <AppImage />
-              <Description />
               <NewFeatures />
               <DataSecurity />
+              <Description />
             </div>
           </div>
           <div className="additional-area-elements">

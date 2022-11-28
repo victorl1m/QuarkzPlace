@@ -2,10 +2,6 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 6px;
-  margin-bottom: 6px;
   padding: 12px;
   align-items: center;
 }
@@ -41,7 +37,7 @@
 .contact-types {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   gap: 12px;
 }
 .contact-title {
