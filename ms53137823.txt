@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Arquivo de verificação de propriedade do domínio para Microsoft 365 local na raiz do site",
+  "Domain": "quarkzplace.one",
+  "Id": "3fe7c148-e3a6-43a6-8592-c7833737c3f4"
+}
