@@ -128,17 +128,13 @@
     width: 100%;
   }
   .appTitle-area {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
   }
-  .appIcon {
-    margin-bottom: 16px;
-  }
-  .appTitlte-box {
+  .appTitle-box {
     align-items: flex-start;
   }
   .appTitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .appTitle-sub {
     font-size: 1.0rem;
