@@ -120,7 +120,7 @@
 @media screen and (max-width: 768px) {
   .appscreen-container {
     flex-direction: column;
-    margin-top: 84px;
+    margin-top: 96px;
     margin-left: 12px;
     margin-right: 12px;
   }
