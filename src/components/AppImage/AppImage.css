@@ -1,0 +1,18 @@
+.appimage-box {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+  
+  .app-image {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+    cursor: default;
+    max-width: 800px;
+  }

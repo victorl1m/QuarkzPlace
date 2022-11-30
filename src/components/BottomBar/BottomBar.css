@@ -5,9 +5,11 @@
     width: 900px;
     margin-top: 100px;
     padding-bottom: 50px;
+    margin-left: 128px;
 }
 .bottomBar-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-highlight);
+    color: var(--text-color);
     font-size: 12px;
 }
 .bottomBar-item {
@@ -17,7 +19,8 @@
     gap: 2px;
 }
 .bottomBar-child {
-    font-family: var(--font-regular);
+    font-family: var(--font-highlight);
+    color: var(--text-color);
     font-weight: 500;
     font-size: 12px;
     cursor: pointer;
@@ -25,7 +28,8 @@
     border: 1px solid transparent;
 }
 .bottomBar-child:hover {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #f5f5f5;
+    border-radius: 2px;
     transition: 0.3s;
 }
 .bottomBar-row-box {
@@ -40,26 +44,10 @@
     gap: 24px;
 }
 .bottomBar-lang {
-    font-family: var(--font-regular);
+    font-family: var(--font-highlight);
+    color: var(--text-color);
     font-weight: 500;
     font-size: 12px;
     cursor: pointer;
     transition: 0.3s;
-}
-@media (max-width: 768px) {
-    .bottomBar-container {
-        margin-left: 0;
-        width: 100%;
-        padding: 12px;
-        align-items: center;
-        text-align: center;
-    }
-    .bottomBar-row-box {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 24px;
-    }
 }

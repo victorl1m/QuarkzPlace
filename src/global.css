@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 :root {
+  --bg-theme-color: #1e1e1e;
   --hg-color: #00b2cb;
+  --hg-btn-color: #00a1b9;
   --hg-color-hover: #00a1b9;
   --transition: 0.3s;
-  --font-serif: "Inter";
-  --font-regular: "Inter";
-  --text-color: rgb(0, 0, 0, 0.8);
+  --text-color: rgb(255, 255, 255, 1.0);
+  --low-text-color: rgb(255, 255, 255, 0.8);
+  --font-highlight: "Inter";
+  --font-highlight-weight: bold;
+  --font-regular-weight: 400;
 }
 
 *:hover {
@@ -40,7 +44,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #fff;
+  background-color: var(--bg-theme-color);
 }
 
 button {

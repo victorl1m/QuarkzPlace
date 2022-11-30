@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import "../../src/global.css";
-import "./NewFeatures.css";
+import "./Update.css";
 
-export default function NewFeatures() {
+export default function Update() {
   const [data, setData] = useState();
   useEffect(() => {
     fetch(import.meta.env.VITE_GITHUB_API)
@@ -17,13 +16,11 @@ export default function NewFeatures() {
   const releaseVersion = data?.tag_name;
 
   return (
-    <div className="newfeature-container">
-      <div>
-        <h1 className="newfeature-version">{releaseVersion}</h1>
-        <h1 className="newfeature-title">O QUE HÁ DE NOVO?</h1>
-        <ul className="newfeature-box">
-          <p className="newfeature-update">{latestInfo}</p>
-        </ul>
+    <div className="update-container">
+      <h1 className="update-title">O que há de novo?</h1>
+      <div className="update-box">
+        <h1 className="release-text">{releaseVersion}</h1>
+        <p className="update-desc">{latestInfo}</p>
       </div>
     </div>
   );

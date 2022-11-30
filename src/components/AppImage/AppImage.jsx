@@ -1,5 +1,4 @@
 import "./AppImage.css";
-import "../../src/global.css";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 

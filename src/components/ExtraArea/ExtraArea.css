@@ -1,0 +1,65 @@
+.moreApps-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.moreApps-item {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px;
+    background-color: rgb(255, 255, 255, 0.05);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    transition: var(--transition);
+}
+.moreApps-item:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 25px;
+}
+.moreApps-appIcon {
+    width: 48px;
+    height: 48px;
+    padding: 6px;
+    border-radius: 25px;
+    background-color: white;
+}
+.moreApps-title {
+    font-family: var(--font-highlight);
+    font-weight: var(--font-regular-weight);
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+.moreApps-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.extra-appName {
+    font-family: var(--font-highlight);
+    font-weight: var(--font-regular-weight);
+    color: var(--text-color);
+    line-height: 1.2;
+    font-size: 1.0rem;
+}
+.extra-ownerName {
+    font-family: var(--font-highlight);
+    font-weight: var(--font-regular-weight);
+    color: var(--low-text-color);
+    line-height: 1.2;
+    font-size: 1.0rem;
+}
+.extra-rating {
+    font-family: var(--font-highlight);
+    font-weight: var(--font-regular-weight);
+    color: var(--text-color);
+    line-height: 1.2;
+    font-size: 0.8rem;
+}
+.extraArea-container {
+    width: 500px;
+}
