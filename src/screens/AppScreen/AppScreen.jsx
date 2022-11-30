@@ -19,7 +19,14 @@ export default function AppScreen() {
   const appName = data?.[0]?.appShortName;
   const appOwner = data?.[0]?.appOwner;
 
-  console.log(data);
+  function downloadLatest() {
+    fetch(import.meta.env.VITE_GITHUB_API)
+      .then((response) => response.json())
+      .then((data) => {
+        window.open(data.assets[0].browser_download_url);
+        window.close();
+      });
+  }
 
   if (!data) {
     return (
@@ -58,7 +65,7 @@ export default function AppScreen() {
           </div>
           <Rating />
           <div className="btn-area">
-            <button className="download-btn">
+            <button onClick={downloadLatest} className="download-btn">
               <h1 className="download-text">Download</h1>
             </button>
           </div>

@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 12px;
     gap: 12px;
 }
 .moreApps-item {
@@ -62,4 +63,10 @@
 }
 .extraArea-container {
     width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .extraArea-container {
+        width: 100%;
+    }
 }

@@ -6,7 +6,7 @@ export default function BottomBar() {
     <div className="bottomBar-container">
       <div className="bottomBar-row-box">
         <ul className="bottomBar-box">
-          <li className="bottomBar-item">
+          <li className="bottomBar-logo">
             <svg
               width="16"
               height="16"

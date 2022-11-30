@@ -51,3 +51,35 @@
     cursor: pointer;
     transition: 0.3s;
 }
+.bottomBar-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .bottomBar-container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottomBar-row-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .bottomBar-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .bottomBar-logo {
+        justify-content: center;
+    }
+}
