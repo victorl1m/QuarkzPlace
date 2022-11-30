@@ -15,9 +15,9 @@ export default function AppScreen() {
       .then((data) => setData(data));
   }, []);
 
-  const appIcon = data[0].appIcon;
-  const appName = data[0].appShortName;
-  const appOwner = data[0].appOwner;
+  const appIcon = data?.[0]?.appIcon;
+  const appName = data?.[0]?.appShortName;
+  const appOwner = data?.[0]?.appOwner;
 
   console.log(data);
 
