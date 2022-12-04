@@ -25,6 +25,7 @@
 .security-info {
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
     gap: 12px;
 }
 .security-item {
