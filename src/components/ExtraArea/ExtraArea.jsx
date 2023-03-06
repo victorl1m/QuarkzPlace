@@ -14,7 +14,7 @@ export default function ExtraArea() {
             alt="app-icon"
           ></img>
           <div className="moreApps-text">
-            <h1 className="extra-appName">GECOM - Gestão de Telecom.</h1>
+            <h1 className="extra-appName">SIGO - Gestão de Obras.</h1>
             <h1 className="extra-ownerName">QuarkzPlace Ltd.</h1>
             <h1 className="extra-rating">0.0 ★</h1>
           </div>
